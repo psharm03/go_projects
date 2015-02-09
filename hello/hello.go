@@ -37,6 +37,12 @@ func main() {
     fmt.Printf("p[%d] == %d\n", i, p[i])
   }
 
+  var abc []int
+  printSlice("a", abc)
+  
+  abc = append(abc, 0)
+  printSlice("a", abc)
+
   a := make([]int, 5)
   printSlice("a", a)
   b := make([]int, 0, 5)
